@@ -9,6 +9,10 @@ function setDiff(diff) {
 }
 
 function generatePass() {
+  //check if len is been selected clicking buttons
+  if (!len) {
+    alert("Please select length first!!");
+  }
   var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
   var numb = "0123456789";
   var special = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~'";
