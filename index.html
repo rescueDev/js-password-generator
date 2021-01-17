@@ -3,19 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>password generator</title>
   </head>
   <body>
     <header>
       <h1>Password generator</h1>
     </header>
-    <div class="container">
-      <h2>Click for password length</h2>
-      <button onclick="setDiff(8)" class="normal">Normal</button>
-      <button onclick="setDiff(12)" class="strong">Strong</button>
-      <button onclick="setDiff(14)" class="stronger">Stronger</button>
-      <div class="generate">
-        <button id="generate" onclick="generatePass(8)">Generate</button>
+    <div class="outer-container">
+      <div class="container">
+        <h2>Choose password length</h2>
+        <button onclick="setDiff(8)" class="normal">Normal</button>
+        <button onclick="setDiff(12)" class="strong">Strong</button>
+        <button onclick="setDiff(14)" class="stronger">Stronger</button>
+        <div class="generate">
+          <button id="generate" onclick="generatePass(8)">Generate</button>
+        </div>
+        <div id="result"></div>
       </div>
     </div>
     <script src="script.js"></script>

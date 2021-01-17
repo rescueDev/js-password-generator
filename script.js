@@ -3,8 +3,8 @@ var len;
 
 function setDiff(diff) {
   len = diff;
-  console.log("pressed", diff);
-  console.log(len);
+  /* console.log("pressed", diff);
+  console.log(len); */
   return len;
 }
 
@@ -34,4 +34,7 @@ function generatePass() {
   var finalPassword = password.join("");
 
   console.log("final password is: ", finalPassword);
+
+  var risultato = document.getElementById("result");
+  risultato.innerHTML = finalPassword;
 }
