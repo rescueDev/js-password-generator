@@ -1,6 +1,14 @@
 //creo variabili con maiusc, min, numbers, specials
+var len;
 
-function generatePass(length) {
+function setDiff(diff) {
+  len = diff;
+  console.log("pressed", diff);
+  console.log(len);
+  return len;
+}
+
+function generatePass() {
   var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
   var numb = "0123456789";
   var special = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~'";
@@ -10,7 +18,7 @@ function generatePass(length) {
   var rndLetter = char[Math.floor(Math.random() * char.length)];
   let i;
 
-  while (password.length < length) {
+  while (password.length < len) {
     var rndLetter = char[Math.floor(Math.random() * char.length)];
     //unique elements
     if (password.includes(rndLetter) == false) {
@@ -19,7 +27,7 @@ function generatePass(length) {
     i++;
   }
 
-  console.log("password is:", password);
+  /* console.log("password is:", password); */
 
   //ouput password
 
@@ -27,6 +35,3 @@ function generatePass(length) {
 
   console.log("final password is: ", finalPassword);
 }
-
-//invokig function with value
-generatePass(10);

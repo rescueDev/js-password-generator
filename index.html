@@ -11,11 +11,11 @@
     </header>
     <div class="container">
       <h2>Click for password length</h2>
-      <button>Normal</button>
-      <button>Strong</button>
-      <button>Stronger</button>
+      <button onclick="setDiff(8)" class="normal">Normal</button>
+      <button onclick="setDiff(12)" class="strong">Strong</button>
+      <button onclick="setDiff(14)" class="stronger">Stronger</button>
       <div class="generate">
-        <button>Generate</button>
+        <button id="generate" onclick="generatePass(8)">Generate</button>
       </div>
     </div>
     <script src="script.js"></script>
